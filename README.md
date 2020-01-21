@@ -80,4 +80,17 @@ BLYNK_WRITE(V1){
 ```
 **Explanation:** reconnectBlynk() checks if our board is connected to the internet. If not, then it tries to reconnect. BLINK_WRITE() is an overriden function that sets pin D2 **HIGH** as soon as blynk virtual pin V1 is set to 1, which happens when you activate the system through Google Assistant (more on that later). Then after 200ms D2 is set to **LOW** and V1 set to 0. This whole process allows the gate opener to activate.
 
-
+5. Google assistant with IFTTT
+Now we will enable google assistant for activating the gate opener.
+   1. On your PC go to  https://ifttt.com
+   2. Sign up with the google account that you use for your google assistant.
+   3. Click on your profile picture on the upper right corner, then select create.
+   4. There will be a "If this then that" phrase, click on the word "this"
+   5. type google assistant on the search bar.
+   6. Give permissions and connect.
+   7. Select "Say a simple phrease" trigger
+   8. on what do you want to say textbox, put: "activate garage door". As I am latino I wrote the same, but in spanish. Write the response you would like to hear back, and write an optional input phrase if you want also. Then click create trigger.
+   9. Now click on "that".
+   10. search for webhooks and click it.
+   11. enter the URL for the webhook: (http://blynk-cloud.com/<your_auth_token>/update/V1). Select PUT as method, application/json as content-type and ["1"] as body. Finally click save.
+    
