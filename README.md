@@ -19,7 +19,7 @@ This project is to extend your common gate opener so that it can activate using 
 **Steps:**
 
 1. Build the sketch according to the schematic (sorry for the informalities, I am no electronics engineer):
-![alt_text]()
+![alt_text](https://github.com/hector6298/Wifi-Garage-Door-Controller/blob/master/imgs/circuit.png)
 
 1. Blynk App.
    1. Download the Blynk app on your phone (either iOS or Android). You might as well want to download the app on all phones in your house for everyone to use the garage door controller.
