@@ -14,8 +14,8 @@ char auth[] = "IdBYH4PBwUx_knQus368Jl8gvmqh5Kty";
 
 // Your WiFi credentials.
 // Set password to "" for open networks.
-char ssid[] = "Family Mejia Vallejo-ext-2.4G";
-char pass[] = "hmejia68";
+char ssid[] = "";
+char pass[] = "";
 const int trigger = 4;
 BlynkTimer timer; 
 
